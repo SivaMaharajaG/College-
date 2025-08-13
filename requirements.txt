@@ -1,0 +1,14 @@
+Flask>=2.2
+Flask-SQLAlchemy
+Flask-Migrate
+Flask-Login
+Flask-WTF
+Flask-Mail
+Flask-Bcrypt
+python-dotenv
+pandas
+pyotp
+reportlab
+python-dateutil
+gunicorn
+email-validator
