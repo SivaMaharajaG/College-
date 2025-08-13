@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% block title %}Add Marks{% endblock %}
+{% block content %}
+<h2>Add Marks</h2>
+<form method="POST">
+  {{ form.hidden_tag() }}
+  <div class="mb-3">
+    {{ form.student_id.label(class="form-label") }}
+    {{ form.student_id(class="form-select") }}
+  </div>
+  <div class="mb-3">
+    {{ form.subject_id.label(class="form-label") }}
+    {{ form.subject_id(class="form-select") }}
+  </div>
+  <div class="mb-3">
+    {{ form.marks_obtained.label(class="form-label") }}
+    {{ form.marks_obtained(class="form-control") }}
+  </div>
+  <div class="mb-3">
+    {{ form.total_marks.label(class="form-label") }}
+    {{ form.total_marks(class="form-control") }}
+  </div>
+  <div class="mb-3">
+    {{ form.exam_type.label(class="form-label") }}
+    {{ form.exam_type(class="form-select") }}
+  </div>
+  {{ form.submit(class="btn btn-primary") }}
+</form>
+{% endblock %}
