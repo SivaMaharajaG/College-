@@ -12,3 +12,4 @@ reportlab
 python-dateutil
 gunicorn
 email-validator
+gunicorn
